@@ -20,6 +20,7 @@
 		A33AFFCC1E6A742E00468911 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFCB1E6A742E00468911 /* Resort.swift */; };
 		A33AFFCF1E6A748900468911 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFCE1E6A748900468911 /* JSON.swift */; };
 		A33AFFD51E6A7BDF00468911 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFD41E6A7BDF00468911 /* Bindable.swift */; };
+		F4C7C5891E6A8660009B515D /* AppServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7C5881E6A8660009B515D /* AppServerClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A33AFFD41E6A7BDF00468911 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bindable.swift; path = helpers/Bindable.swift; sourceTree = "<group>"; };
 		AB3CDA69A8F1D538FDA2685E /* Pods-LaplandApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaplandApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaplandApplication/Pods-LaplandApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		ACF7255B718DD56E4ED74CFB /* Pods_LaplandApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaplandApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C7C5881E6A8660009B515D /* AppServerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppServerClient.swift; path = service/AppServerClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		A33AFF8C1E6A599A00468911 /* LaplandApplication */ = {
 			isa = PBXGroup;
 			children = (
+				F4C7C5871E6A8576009B515D /* service */,
 				A33AFFCD1E6A746200468911 /* helpers */,
 				A33AFFCA1E6A73FE00468911 /* models */,
 				A33AFFC51E6A73D200468911 /* viewmodels */,
@@ -194,6 +197,14 @@
 				ACF7255B718DD56E4ED74CFB /* Pods_LaplandApplication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C7C5871E6A8576009B515D /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7C5881E6A8660009B515D /* AppServerClient.swift */,
+			);
+			name = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +402,7 @@
 				A33AFFCC1E6A742E00468911 /* Resort.swift in Sources */,
 				A33AFF8E1E6A599A00468911 /* AppDelegate.swift in Sources */,
 				A33AFFD51E6A7BDF00468911 /* Bindable.swift in Sources */,
+				F4C7C5891E6A8660009B515D /* AppServerClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
