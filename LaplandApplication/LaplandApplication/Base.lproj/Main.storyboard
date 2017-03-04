@@ -26,7 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="209"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtH-eK-omb">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtH-eK-omb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="208.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgT-bQ-uNQ">
@@ -49,6 +49,7 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="LgT-bQ-uNQ" id="s2c-fA-iUU"/>
                                     <outlet property="resortImageView" destination="dtH-eK-omb" id="EwK-7y-Q4D"/>
+                                    <segue destination="NMz-KE-OaP" kind="show" identifier="cellToDetail" id="3GN-cU-9Rg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,11 +58,19 @@
                             <outlet property="delegate" destination="qhm-lS-cPh" id="xVJ-YT-WXm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="280-L2-CYO"/>
+                    <navigationItem key="navigationItem" title="Resorts" id="280-L2-CYO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kqu-mR-KMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="536.79999999999995" y="112.89355322338831"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="kSX-bQ-B3Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="NMz-KE-OaP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2z-nQ-myQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="81"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2tK-hd-ILs">

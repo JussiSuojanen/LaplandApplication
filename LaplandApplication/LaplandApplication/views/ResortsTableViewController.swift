@@ -28,6 +28,14 @@ class ResortsTableViewController: UITableViewController {
             self?.tableView?.reloadData()
         }
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cellToDetail",
+            let detailViewController = segue.destination as? DetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+                detailViewController.viewModel = DetailViewModel( viewModel.resorts.value[indexPath.row].resort)
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource

@@ -1,12 +1,14 @@
 import Foundation
 
 protocol ResortCellViewModel {
+    var resort: Resort { get }
     var type: Int { get }
     var name: String { get }
     var image: String { get }
 }
 
 struct SkiResortViewModel: ResortCellViewModel {
+    var resort: Resort
     var type: Int
     var name: String
     var image: String
@@ -18,6 +20,7 @@ struct SkiResortViewModel: ResortCellViewModel {
     var crossCountrySki: Int
 
     init(_ resort: Resort) {
+        self.resort = resort
         self.type = resort.type
         self.name = resort.name
         self.image = resort.defaultImage
@@ -31,11 +34,13 @@ struct SkiResortViewModel: ResortCellViewModel {
 }
 
 struct MoominResortViewModel: ResortCellViewModel {
+    var resort: Resort
     var type: Int
     var name: String
     var image: String
 
     init(_ resort: Resort) {
+        self.resort = resort
         self.type = resort.type
         self.name = resort.name
         self.image = resort.defaultImage
@@ -43,11 +48,13 @@ struct MoominResortViewModel: ResortCellViewModel {
 }
 
 struct SantaResortViewModel: ResortCellViewModel {
+    var resort: Resort
     var type: Int
     var name: String
     var image: String
 
     init(_ resort: Resort) {
+        self.resort = resort
         self.type = resort.type
         self.name = resort.name
         self.image = resort.defaultImage
