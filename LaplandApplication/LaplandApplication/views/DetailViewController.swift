@@ -45,7 +45,7 @@ class DetailViewController: UIViewController {
         labelSlopesOpen.text = viewModel.numberOfSlopesOpen
         labelLiftNumber.text = viewModel.numberOfLifts
         labelLiftsOpen.text = viewModel.numberOfLiftsOpen
-        labelCrossCountryLinesLength.text = viewModel.numberOfLiftsOpen
+        labelCrossCountryLinesLength.text = viewModel.crossCountrySki
 
         if let url = URL(string: viewModel.image) {
             imageView.af_setImage(withURL: url)
