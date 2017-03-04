@@ -26,10 +26,8 @@ class ResortCell: UITableViewCell {
             let imageUrl = URL(string: imageUrlString) else {
                 return
         }
-//        resortImageView.af_setImage(withURL:imageUrl)
-
         resortImageView.af_setImage(withURL: imageUrl, placeholderImage: nil, filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: .crossDissolve(0.2), runImageTransitionIfCached: true, completion: { response in
-            if let image = response.result.value {
+            if let _ = response.result.value {
                 print("image downloaded!")
             } else {
                 debugPrint(response.result)

@@ -22,6 +22,10 @@
 		A33AFFD51E6A7BDF00468911 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFD41E6A7BDF00468911 /* Bindable.swift */; };
 		A33AFFD91E6A9E5D00468911 /* ResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFD81E6A9E5D00468911 /* ResortCell.swift */; };
 		F4C7C5891E6A8660009B515D /* AppServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7C5881E6A8660009B515D /* AppServerClient.swift */; };
+		F4C7C58B1E6A9409009B515D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C7C58A1E6A9409009B515D /* Detail.storyboard */; };
+		F4C7C58F1E6A94E5009B515D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7C58E1E6A94E5009B515D /* DetailViewController.swift */; };
+		F4C7C5911E6A9793009B515D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7C5901E6A9793009B515D /* DetailViewModel.swift */; };
+		F4C7C5931E6AA909009B515D /* ResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7C5921E6AA909009B515D /* ResortCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +65,13 @@
 		A33AFFCB1E6A742E00468911 /* Resort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resort.swift; path = models/Resort.swift; sourceTree = "<group>"; };
 		A33AFFCE1E6A748900468911 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = helpers/JSON.swift; sourceTree = "<group>"; };
 		A33AFFD41E6A7BDF00468911 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bindable.swift; path = helpers/Bindable.swift; sourceTree = "<group>"; };
-		A33AFFD81E6A9E5D00468911 /* ResortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResortCell.swift; path = views/ResortCell.swift; sourceTree = "<group>"; };
 		AB3CDA69A8F1D538FDA2685E /* Pods-LaplandApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaplandApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaplandApplication/Pods-LaplandApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		ACF7255B718DD56E4ED74CFB /* Pods_LaplandApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaplandApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C7C5881E6A8660009B515D /* AppServerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppServerClient.swift; path = service/AppServerClient.swift; sourceTree = "<group>"; };
+		F4C7C58A1E6A9409009B515D /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		F4C7C58E1E6A94E5009B515D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = views/DetailViewController.swift; sourceTree = "<group>"; };
+		F4C7C5901E6A9793009B515D /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewModel.swift; path = models/DetailViewModel.swift; sourceTree = "<group>"; };
+		F4C7C5921E6AA909009B515D /* ResortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResortCell.swift; path = views/ResortCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +141,7 @@
 				A33AFFC21E6A73A400468911 /* views */,
 				A33AFF8D1E6A599A00468911 /* AppDelegate.swift */,
 				A33AFF911E6A599A00468911 /* Main.storyboard */,
+				F4C7C58A1E6A9409009B515D /* Detail.storyboard */,
 				A33AFF941E6A599A00468911 /* Assets.xcassets */,
 				A33AFF961E6A599A00468911 /* LaunchScreen.storyboard */,
 				A33AFF991E6A599A00468911 /* Info.plist */,
@@ -162,8 +170,9 @@
 		A33AFFC21E6A73A400468911 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				A33AFFD81E6A9E5D00468911 /* ResortCell.swift */,
+				F4C7C5921E6AA909009B515D /* ResortCell.swift */,
 				A33AFFC31E6A73B800468911 /* ResortsTableViewController.swift */,
+				F4C7C58E1E6A94E5009B515D /* DetailViewController.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -173,6 +182,7 @@
 			children = (
 				A33AFFC61E6A73F400468911 /* ResortCellViewModel.swift */,
 				A33AFFC71E6A73F400468911 /* ResortsTableViewModel.swift */,
+				F4C7C5901E6A9793009B515D /* DetailViewModel.swift */,
 			);
 			name = viewmodels;
 			sourceTree = "<group>";
@@ -326,6 +336,7 @@
 				A33AFF981E6A599A00468911 /* LaunchScreen.storyboard in Resources */,
 				A33AFF951E6A599A00468911 /* Assets.xcassets in Resources */,
 				A33AFF931E6A599A00468911 /* Main.storyboard in Resources */,
+				F4C7C58B1E6A9409009B515D /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,9 +409,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C7C58F1E6A94E5009B515D /* DetailViewController.swift in Sources */,
 				A33AFFC91E6A73F400468911 /* ResortsTableViewModel.swift in Sources */,
 				A33AFFC81E6A73F400468911 /* ResortCellViewModel.swift in Sources */,
+				F4C7C5911E6A9793009B515D /* DetailViewModel.swift in Sources */,
 				A33AFFC41E6A73B800468911 /* ResortsTableViewController.swift in Sources */,
+				F4C7C5931E6AA909009B515D /* ResortCell.swift in Sources */,
 				A33AFFCF1E6A748900468911 /* JSON.swift in Sources */,
 				A33AFFCC1E6A742E00468911 /* Resort.swift in Sources */,
 				A33AFF8E1E6A599A00468911 /* AppDelegate.swift in Sources */,
