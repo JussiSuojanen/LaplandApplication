@@ -8,23 +8,30 @@
 
 import UIKit
 
-class ResortTableViewController: UITableViewController {
+class ResortsTableViewController: UITableViewController {
 
     let viewModel: ResortsTableViewModel = ResortsTableViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        bindViewModel()
+        viewModel.getResorts()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    func bindViewModel() {
+        viewModel.resorts.bindAndFire() { [weak self] _ in
+            self?.tableView?.reloadData()
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
-extension ResortTableViewController {
+extension ResortsTableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -36,6 +43,20 @@ extension ResortTableViewController {
 
     override func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let resortCell = tableView.dequeueReusableCell(withIdentifier: "resortCell") as? ResortCell else {
+            return UITableViewCell()
+        }
+        let resortViewModel = viewModel.resorts.value[indexPath.row] as? ResortCellViewModel
+        switch resortViewModel?.type {
+        case 1:
+            resortCell.viewModel = resortViewModel as? SkiResortViewModel
+        case 2:
+            resortCell.viewModel = resortViewModel as? MoominResortViewModel
+        case 3:
+            resortCell.viewModel = resortViewModel as? SantaResortViewModel
+        default:
+            return UITableViewCell()
+        }
+        return resortCell
     }
 }

@@ -6,25 +6,55 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--ResortTableViewController-->
         <scene sceneID="FDS-Ya-Aie">
             <objects>
-                <tableViewController title="ResortTableViewController" id="qhm-lS-cPh" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="f2b-MV-TSd">
+                <tableViewController title="ResortTableViewController" id="qhm-lS-cPh" customClass="ResortsTableViewController" customModule="LaplandApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" sectionHeaderHeight="28" sectionFooterHeight="28" id="f2b-MV-TSd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KTv-mf-aem">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="210" id="KTv-mf-aem" customClass="ResortCell" customModule="LaplandApplication" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KTv-mf-aem" id="OG5-BX-VPW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="209"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtH-eK-omb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="208.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="dtH-eK-omb" secondAttribute="height" multiplier="18:10" id="NOQ-Zx-DL4"/>
+                                                <constraint firstAttribute="width" priority="500" constant="375" id="vrz-xz-ted"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgT-bQ-uNQ">
+                                            <rect key="frame" x="24" y="24" width="327" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dtH-eK-omb" firstAttribute="leading" secondItem="OG5-BX-VPW" secondAttribute="leading" id="60k-cM-Wfd"/>
+                                        <constraint firstItem="LgT-bQ-uNQ" firstAttribute="top" secondItem="OG5-BX-VPW" secondAttribute="topMargin" constant="16" id="6vd-AI-Tq2"/>
+                                        <constraint firstItem="dtH-eK-omb" firstAttribute="top" secondItem="OG5-BX-VPW" secondAttribute="top" id="MVb-fq-6mp"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="LgT-bQ-uNQ" secondAttribute="trailing" constant="16" id="N1u-E5-eht"/>
+                                        <constraint firstItem="LgT-bQ-uNQ" firstAttribute="leading" secondItem="OG5-BX-VPW" secondAttribute="leadingMargin" constant="16" id="eyb-eP-ouq"/>
+                                        <constraint firstAttribute="bottom" secondItem="dtH-eK-omb" secondAttribute="bottom" id="sjk-8K-1oq"/>
+                                        <constraint firstAttribute="trailing" secondItem="dtH-eK-omb" secondAttribute="trailing" id="zA4-Ub-hb9"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="LgT-bQ-uNQ" id="s2c-fA-iUU"/>
+                                    <outlet property="resortImageView" destination="dtH-eK-omb" id="EwK-7y-Q4D"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,7 +66,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kqu-mR-KMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="538" y="113"/>
+            <point key="canvasLocation" x="536.79999999999995" y="112.89355322338831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2tK-hd-ILs">
