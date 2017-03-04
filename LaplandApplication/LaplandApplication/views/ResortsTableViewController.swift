@@ -46,8 +46,8 @@ extension ResortsTableViewController {
         guard let resortCell = tableView.dequeueReusableCell(withIdentifier: "resortCell") as? ResortCell else {
             return UITableViewCell()
         }
-        let resortViewModel = viewModel.resorts.value[indexPath.row] as? ResortCellViewModel
-        switch resortViewModel?.type {
+        let resortViewModel = viewModel.resorts.value[indexPath.row]
+        switch resortViewModel.type {
         case 1:
             resortCell.viewModel = resortViewModel as? SkiResortViewModel
         case 2:

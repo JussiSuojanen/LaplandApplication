@@ -20,6 +20,7 @@
 		A33AFFCC1E6A742E00468911 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFCB1E6A742E00468911 /* Resort.swift */; };
 		A33AFFCF1E6A748900468911 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFCE1E6A748900468911 /* JSON.swift */; };
 		A33AFFD51E6A7BDF00468911 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFD41E6A7BDF00468911 /* Bindable.swift */; };
+		A33AFFD91E6A9E5D00468911 /* ResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AFFD81E6A9E5D00468911 /* ResortCell.swift */; };
 		F4C7C5891E6A8660009B515D /* AppServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7C5881E6A8660009B515D /* AppServerClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +61,7 @@
 		A33AFFCB1E6A742E00468911 /* Resort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resort.swift; path = models/Resort.swift; sourceTree = "<group>"; };
 		A33AFFCE1E6A748900468911 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = helpers/JSON.swift; sourceTree = "<group>"; };
 		A33AFFD41E6A7BDF00468911 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bindable.swift; path = helpers/Bindable.swift; sourceTree = "<group>"; };
-		A33AFFD61E6A88B900468911 /* ResortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResortCell.swift; path = views/ResortCell.swift; sourceTree = "<group>"; };
+		A33AFFD81E6A9E5D00468911 /* ResortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResortCell.swift; path = views/ResortCell.swift; sourceTree = "<group>"; };
 		AB3CDA69A8F1D538FDA2685E /* Pods-LaplandApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaplandApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaplandApplication/Pods-LaplandApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		ACF7255B718DD56E4ED74CFB /* Pods_LaplandApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaplandApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C7C5881E6A8660009B515D /* AppServerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppServerClient.swift; path = service/AppServerClient.swift; sourceTree = "<group>"; };
@@ -161,8 +162,8 @@
 		A33AFFC21E6A73A400468911 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A33AFFD81E6A9E5D00468911 /* ResortCell.swift */,
 				A33AFFC31E6A73B800468911 /* ResortsTableViewController.swift */,
-				A33AFFD61E6A88B900468911 /* ResortCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -402,8 +403,8 @@
 				A33AFFC41E6A73B800468911 /* ResortsTableViewController.swift in Sources */,
 				A33AFFCF1E6A748900468911 /* JSON.swift in Sources */,
 				A33AFFCC1E6A742E00468911 /* Resort.swift in Sources */,
-				A33AFFD71E6A88B900468911 /* ResortCell.swift in Sources */,
 				A33AFF8E1E6A599A00468911 /* AppDelegate.swift in Sources */,
+				A33AFFD91E6A9E5D00468911 /* ResortCell.swift in Sources */,
 				A33AFFD51E6A7BDF00468911 /* Bindable.swift in Sources */,
 				F4C7C5891E6A8660009B515D /* AppServerClient.swift in Sources */,
 			);
