@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var labelLiftNumber: UILabel!
     @IBOutlet weak var labelLiftsOpen: UILabel!
     @IBOutlet weak var labelCrossCountryLinesLength: UILabel!
+    @IBOutlet weak var labelHeight: UILabel!
 
     var viewModel: DetailViewModel?
 
@@ -46,6 +47,7 @@ class DetailViewController: UIViewController {
         labelLiftNumber.text = viewModel.numberOfLifts
         labelLiftsOpen.text = viewModel.numberOfLiftsOpen
         labelCrossCountryLinesLength.text = viewModel.crossCountrySki
+        labelHeight.text = viewModel.height
 
         if let url = URL(string: viewModel.image) {
             imageView.af_setImage(withURL: url)

@@ -65,11 +65,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;d_height_km&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY8-nO-TrN">
+                                <rect key="frame" x="100" y="424" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="jXy-wH-u2T" secondAttribute="trailing" id="43h-96-X6C"/>
                             <constraint firstItem="2sR-Qn-tms" firstAttribute="leading" secondItem="BwL-Al-PDq" secondAttribute="leading" constant="100" id="5We-RO-gEm"/>
+                            <constraint firstItem="FY8-nO-TrN" firstAttribute="leading" secondItem="BwL-Al-PDq" secondAttribute="leading" constant="100" id="6NN-3N-2bk"/>
                             <constraint firstItem="ZJx-kx-zPH" firstAttribute="top" secondItem="9X1-VJ-xtr" secondAttribute="bottom" constant="8" id="7ta-N3-Vpv"/>
                             <constraint firstAttribute="trailing" secondItem="Zi7-O1-ekE" secondAttribute="trailing" constant="16" id="E8P-1N-cEK"/>
                             <constraint firstItem="jXy-wH-u2T" firstAttribute="top" secondItem="zjz-Jh-FtU" secondAttribute="bottom" constant="13.5" id="EX2-ea-lVd"/>
@@ -86,14 +93,17 @@
                             <constraint firstAttribute="trailing" secondItem="zjz-Jh-FtU" secondAttribute="trailing" id="eSf-L4-6C8"/>
                             <constraint firstAttribute="trailing" secondItem="9X1-VJ-xtr" secondAttribute="trailing" constant="16" id="gxc-M3-FvD"/>
                             <constraint firstItem="zjz-Jh-FtU" firstAttribute="leading" secondItem="BwL-Al-PDq" secondAttribute="leading" id="iOW-a7-udG"/>
+                            <constraint firstItem="FY8-nO-TrN" firstAttribute="top" secondItem="maS-HN-vkp" secondAttribute="bottom" constant="8" id="kht-1j-HTu"/>
                             <constraint firstItem="9X1-VJ-xtr" firstAttribute="top" secondItem="2sR-Qn-tms" secondAttribute="bottom" constant="8" id="sdp-gf-OoD"/>
                             <constraint firstItem="2sR-Qn-tms" firstAttribute="top" secondItem="jXy-wH-u2T" secondAttribute="bottom" constant="8" id="trQ-VR-w6S"/>
+                            <constraint firstItem="FY8-nO-TrN" firstAttribute="trailing" secondItem="BwL-Al-PDq" secondAttribute="trailingMargin" constant="16" id="wEr-k0-Ok3"/>
                             <constraint firstItem="maS-HN-vkp" firstAttribute="top" secondItem="Zi7-O1-ekE" secondAttribute="bottom" constant="8" id="yTV-nq-SEo"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="zjz-Jh-FtU" id="IgM-l5-1vx"/>
                         <outlet property="labelCrossCountryLinesLength" destination="maS-HN-vkp" id="5kC-fc-jXT"/>
+                        <outlet property="labelHeight" destination="FY8-nO-TrN" id="U4g-aL-Dd4"/>
                         <outlet property="labelLiftNumber" destination="ZJx-kx-zPH" id="kTJ-aP-bXw"/>
                         <outlet property="labelLiftsOpen" destination="Zi7-O1-ekE" id="Mtf-b5-ww2"/>
                         <outlet property="labelName" destination="jXy-wH-u2T" id="RgW-gr-xiS"/>
